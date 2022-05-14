@@ -19,7 +19,6 @@ public class JsonLineMapper<T> implements LineMapper<T> {
         return objectMapper.readValue(line, targetType);
     }
 
-
     public T mapLine(String line) throws Exception {
         return objectMapper.readValue(line, targetType);
     }

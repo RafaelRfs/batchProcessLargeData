@@ -24,6 +24,7 @@ public class ClientProcessor implements ItemProcessor<Client,Client> {
                 Plan plan = jsonLineMapper.mapLine(line);
                 if(client.getPlanId().equals(plan.getId())){
                     client.setPlan(plan);
+                    break;
                 }
             }
         }

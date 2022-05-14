@@ -33,9 +33,6 @@ public class JobController {
         } catch (Exception e) {
             log.error("Erro ao rodar o job: {} ", e.getMessage());
         }
-
-
     }
-
 
 }

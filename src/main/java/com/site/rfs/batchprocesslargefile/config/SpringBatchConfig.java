@@ -46,7 +46,7 @@ public class SpringBatchConfig {
         FlatFileItemReader<Client> itemReader = new FlatFileItemReader<>();
         itemReader.setResource(new FileSystemResource("/process/data-processing/clients.txt"));
         itemReader.setName("clientsData");
-        itemReader.setLinesToSkip(1);
+        itemReader.setLinesToSkip(0);
         itemReader.setLineMapper(new JsonLineMapper<>(Client.class));
         return itemReader;
     }
